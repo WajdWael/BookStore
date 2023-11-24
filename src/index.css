@@ -1,0 +1,148 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Colors: */
+  --darkBlue: #190482;
+  --darkpurple: #7752FE; 
+  --lightpurple: #8E8FFA; 
+  --lightBlue:#C2D9FF;
+}
+
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  position: relative;
+}
+
+.container{
+  padding: 1rem;
+  margin: 0 auto;
+}
+.container-centered{
+  max-width: 1100px;
+  padding: 5rem 1rem;
+  margin: 0 auto;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.btn{
+  background: #232323;
+  padding: 1rem 1.75rem;
+  border-radius: 1rem;
+  font-size: 18px;
+  color: white;
+  margin: 1rem;
+  font-weight: 600;
+  box-shadow: 0px 3px 1px #c9c9c9;
+  border: 0px;
+  transition: .3s ease;
+  cursor: pointer;
+}
+.btn.nav{
+  padding: 0.25rem 1rem;
+  margin: 0;
+}
+.btn.nav-menu{
+  padding: 1rem;
+  border-radius: 50%;
+  margin: 0;
+}
+@media (min-width:768px) {
+  .btn.nav-menu{
+      display: none;
+  }
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+.btn-outline{
+  margin: 0;
+  background: white;
+  border: 2px solid #414141;
+  color: #171c18;
+}
+
+@media (max-width: 468px){
+  .btn{
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+}
+.small-btn{
+  margin: 0;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.update-btn{
+  background: #2c2cdb;
+  border-radius: 8px;
+  width: 100%;
+
+}
+.delete-btn{
+  background: #eee;
+  border-radius: 8px;
+  color: #333;
+  width: 100%;
+}
+
+.colored-svg{
+  background: #d01452;
+  color: white;
+  padding: 0.25rem;
+  border-radius: 50%;
+}
+.icon{
+  margin: 0;
+  padding: 0.5rem;
+  gap: 0.25rem;
+}
+
+.m-0{
+  margin: 0;
+}
+.m-2{
+  margin: 2rem;
+}
+.txt-start{
+  text-align: start;
+}
+.flex-end{
+  display:flex;
+  justify-content: end;
+}
+.underlined{
+  text-decoration: underline;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
